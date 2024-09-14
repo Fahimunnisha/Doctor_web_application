@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #47b7a8;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-bottom: 40px;
+        }
+        .header div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header img {
+            width: 50px;
+            height: 50px;
+        }
+        .patients {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .patient {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            color: #000;
+            flex-basis: calc(33.33% - 50px); /* 3 per row */
+        }
+        .patient img {
+            width: 50px;
+            height: 50px;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <a href="home.html">
+                <img src="home.png" alt="Home">
+                <p>Home</p>
+            </a>
+        </div>
+        <div>
+            <a href="reference.html">
+                <img src="reference.png" alt="References">
+                <p>References</p>
+            </a>
+        </div>
+        <div>
+            <a href="doctor_scan.html">
+                <img src="scanner.png" alt="Scan">
+                <p>Scan</p>
+            </a>
+        </div>
+    </div>
+    <div class="patients">
+        <div class="patient">
+            <img src="mr_k_icon.png" alt="Mr. K">
+            <p>Mr. K</p>
+        </div>
+        <div class="patient">
+            <img src="mr_m_icon.png" alt="Mr. M">
+            <p>Mr. M</p>
+        </div>
+        <div class="patient">
+            <img src="mrs_s_icon.png" alt="Mrs. S">
+            <p>Mrs. S</p>
+        </div>
+        <div class="patient">
+            <img src="mr_y_icon.png" alt="Mr. Y">
+            <p>Mr. Y</p>
+        </div>
+        <div class="patient">
+            <img src="ms_v_icon.jpeg" alt="Ms. V">
+            <p>Ms. V</p>
+        </div>
+        <div class="patient">
+            <img src="ms_n_icon.png" alt="Ms. N">
+            <p>Ms. N</p>
+        </div>
+    </div>
+</body>
+</html>
