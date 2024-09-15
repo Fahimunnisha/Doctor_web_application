@@ -84,5 +84,16 @@
             <p>Already have an account? <a href="doctor_signin.html">Sign in here</a></p>
         </div>
     </div>
+     <script>
+        document.getElementById('signin-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Simulate form submission process (e.g., validate credentials)
+            // Here, you could also add AJAX to handle server-side login and redirection
+            
+            // Redirect to the homepage
+            window.location.href = "appointments.html"; // Replace with your homepage URL
+        });
+    </script>
 </body>
 </html>
