@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Care Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#47b7a8 ;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0; /* No gap between images */
+        }
+        .image-section {
+            height: 500px; /* Adjust height as needed */
+        }
+        .image-section img {
+            height: 100%;
+            width: 100%; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body onload="navigateToAppointments()">
+    <div class="container">
+        <div class="image-section">
+            <img src="logo.jpg" alt="Logo">
+        </div>
+        <div class="image-section">
+            <img src="doctor.jpeg" alt="Doctor">
+        </div>
+    </div>
+
+    <script>
+        function navigateToAppointments() {
+            setTimeout(function() {
+                window.location.href = "doctor_signin.html"; // Replace with your appointments page URL
+            }, 3000); // 3000 milliseconds = 3 seconds
+        }
+    </script>
+</body>
+</html>
